@@ -4,14 +4,11 @@ using System.Text;
 
 namespace StudentandTeacherDetails.Details
 {
-    class Teacher
+    interface OverrideInterface
     {
         public string Name { get; set; }
         public string classandsec { get; set; }
 
-        public virtual string Get1()
-        {
-            return $"Name: {Name}, Class And Section: {classandsec}";
-        }
+        public string Get1();
     }
 }

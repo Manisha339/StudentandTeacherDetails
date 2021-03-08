@@ -4,25 +4,16 @@ using System.Text;
 
 namespace StudentandTeacherDetails.Details
 {
-    class Subjects: basicSubject
+    class Subjects: Teacher
     {
-        public int Maths { get; set; }
-        public int English { get; set; }
-        public int Science { get; set; }
-        public int Social { get; set; }
-        public int SecondLanguage { get; set; }
+        public String Subcode { get; set; }
+        
 
-        public Subjects()
+        public override String Get1()
         {
-            this.Maths = 0;
-            this.English = 0;
-            this.Science = 0;
-            this.Social = 0;
-            this.SecondLanguage = 0;
-        }
-        public override int getTotalMarks()
-        {
-            return this.Maths + this.English + this.Science + this.Social + this.SecondLanguage;
+           
+            return $"Name: {Name}, Class And Section: {classandsec}, Subject Code: {Subcode}\n";
+
         }
 
     }

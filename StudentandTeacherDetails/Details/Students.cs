@@ -7,7 +7,11 @@ namespace StudentandTeacherDetails.Details
     class Students
     {
         public string Name { get; set; }
-        public string Address { get; set; }
-        public string Grade { get; set; }
+        public string classandses1 { get; set; }
+
+        public String get1()
+        {
+            return "Name: " + Name + " Class And Session: " + classandses1 + "\n";
+        }
     }
 }
