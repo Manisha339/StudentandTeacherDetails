@@ -8,49 +8,28 @@ namespace StudentandTeacherDetails.Details
     {
         public static void Do()
         {
-            Teacher teacher = new Teacher();
-            teacher.Name = " Anitha";
-            teacher.classandsec = "XI B";
-            Subjects sub1 = new Subjects();
-            sub1.Subcode = "Maths-1";
+            Console.WriteLine("----------------------Student Details-------------------------");
+            ImplementStudent st1 = new ImplementStudent();
+            st1.SetValues("Jithin Allu", "VIII B");
+            Console.WriteLine("Name: " + st1.GetName() + "  Class And Session: " + st1.GetClassAndSession());
+            ImplementStudent st2 = new ImplementStudent();
+            st2.SetValues("Naresh Babu", "VI B");
+            Console.WriteLine("Name: " + st2.GetName() + "  Class And Session: " + st2.GetClassAndSession());
+            ImplementStudent st3 = new ImplementStudent();
+            st3.SetValues("Jamuna", "XI A");
+            Console.WriteLine("Name: " + st3.GetName() + "  Class And Session: " + st3.GetClassAndSession());
 
-            Teacher teacher1 = new Teacher();
-            teacher1.Name = " Saritha";
-            teacher1.classandsec = "X A";
-            Subjects sub2= new Subjects();
-            sub2.Subcode = "Physics-2";
 
-            Teacher teacher2 = new Teacher();
-            teacher2.Name = " Gnanesh";
-            teacher2.classandsec = "VI B";
-            Subjects sub3 = new Subjects();
-            sub3.Subcode = "Social";
-
-            Students students = new Students();
-            students.Name = "Sai";
-            students.classandses1 = "XI B";
-
-            Students students1 = new Students();
-            students1.Name = "Druvita";
-            students1.classandses1 = "X B";
-
-            Students students2 = new Students();
-            students2.Name = "Sree ram";
-            students2.classandses1 = "VI A";
-            Console.WriteLine("*********************************************************************");
-            Console.WriteLine("Student In Class");
-            Console.WriteLine("*********************************************************************");
-            Console.WriteLine("Student Name: " + students.Name + "\nClass And Session: " + students.classandses1 +  "\n");
-            Console.WriteLine("Student Name: " + students1.Name + "\nClass And Session: " + students1.classandses1 + "\n");
-            Console.WriteLine("Student Name: " + students2.Name + "\nClass And Session: " + students2.classandses1 + "\n");
-            Console.WriteLine("*********************************************************************");
-            Console.WriteLine("Subjects Thought By Teacher");
-            Console.WriteLine("*********************************************************************");
-            Console.WriteLine("Name: "+teacher.Name+"\nClass And Session: "+teacher.classandsec+"\nSubjectCode: "+sub1.Subcode);
-            Console.WriteLine("Name: " + teacher1.Name + "\nClass And Session: " + teacher1.classandsec + "\nSubjectCode: " + sub2.Subcode);
-            Console.WriteLine("Name: " + teacher2.Name + "\nClass And Session: " + teacher2.classandsec + "\nSubjectCode: " + sub3.Subcode);
-            
-
+            Console.WriteLine("----------------------Teacher Details-------------------------");
+            ImplementTeacher tea1 = new ImplementTeacher();
+            tea1.SetValues("Ramu", "VII B", "Maths-01");
+            Console.WriteLine("Name: " + tea1.GetName() + "  Class And Session: " + tea1.GetClassAndSession()+"Subject code: "+tea1.GetSubjectCode());
+            ImplementTeacher tea2 = new ImplementTeacher();
+            tea2.SetValues("Ramu", "VII B", "Maths-01");
+            Console.WriteLine("Name: " + tea2.GetName() + "  Class And Session: " + tea2.GetClassAndSession() + "Subject code: " + tea2.GetSubjectCode());
+            ImplementTeacher tea3 = new ImplementTeacher();
+            tea3.SetValues("Ramu", "VII B", "Maths-01");
+            Console.WriteLine("Name: " + tea3.GetName() + "  Class And Session: " + tea3.GetClassAndSession() + "Subject code: " + tea3.GetSubjectCode());
         }
     }
 }

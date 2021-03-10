@@ -4,14 +4,13 @@ using System.Text;
 
 namespace StudentandTeacherDetails.Details
 {
-    class Teacher
+    abstract class Teacher
     {
-        public string Name { get; set; }
-        public string classandsec { get; set; }
+        protected String Name;
+        protected String ClassAndSession;
 
-        public virtual string Get1()
-        {
-            return $"Name: {Name}, Class And Section: {classandsec}";
-        }
+        public abstract String GetName();
+        public abstract String GetClassAndSession();
+        
     }
 }

@@ -4,14 +4,14 @@ using System.Text;
 
 namespace StudentandTeacherDetails.Details
 {
-    class Students
+    abstract class Students
     {
-        public string Name { get; set; }
-        public string classandses1 { get; set; }
+        protected String Name;
+        protected String ClassAndSession;
 
-        public String get1()
-        {
-            return "Name: " + Name + " Class And Session: " + classandses1 + "\n";
-        }
+        public abstract String GetName();
+        public abstract String GetClassAndSession();
+        public abstract void SetValues(string name, String ClassAndSession);
+
     }
 }

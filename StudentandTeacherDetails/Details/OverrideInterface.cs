@@ -4,11 +4,11 @@ using System.Text;
 
 namespace StudentandTeacherDetails.Details
 {
-    interface OverrideInterface
+    abstract class  OverrideInterface : Teacher
     {
-        public string Name { get; set; }
-        public string classandsec { get; set; }
+        protected string subjectcode1;
 
-        public string Get1();
+        public abstract string GetSubjectCode();
+        public abstract void SetValues(string name, string ClassAndSession, string subject);
     }
 }
