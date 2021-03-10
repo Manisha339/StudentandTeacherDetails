@@ -6,7 +6,7 @@ namespace StudentandTeacherDetails.Details
 {
     abstract class  OverrideInterface : Teacher
     {
-        protected string subjectcode1;
+        public string SubjectCode1;
 
         public abstract string GetSubjectCode();
         public abstract void SetValues(string name, string ClassAndSession, string subject);
